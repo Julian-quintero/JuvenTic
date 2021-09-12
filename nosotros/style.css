@@ -116,3 +116,18 @@ footer img {
     width: 200px;
     padding: 20px;
 }
+footer div {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 30px;
+}
+footer table {
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+footer iframe {
+    padding: 30px 0 0 20px;
+}
