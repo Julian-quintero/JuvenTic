@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+
+footer {
+    width: 100%;
+    background-color: rgb(49, 1, 1);
+}
+footer img {
+    width: 200px;
+    padding: 20px;
+    margin-right: 50px;
+}
+footer div {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 30px;
+}
+footer table {
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+footer iframe {
+    padding-top: 30px;
+}
+.container {
+    width: 40%;
+    min-width: 300px;
+    color: white;
+}
+.row-cols-3 {
+    width: 100%;
+}
+.col {
+    min-width: 100px;
+    text-align: initial;
+}
+.col-10 {
+    padding: initial;
+    padding-bottom: 5px;
+}
