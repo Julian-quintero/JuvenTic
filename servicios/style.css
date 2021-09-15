@@ -10,3 +10,23 @@
     font-family: 'Anton', sans-serif;
 }
 
+
+.navbar {
+    padding-top: 0 !important;
+}
+.nav-item {
+    padding-right: 50px;
+}
+.nav-link{
+    color: white !important; 
+}
+.navbar-logo {
+    font-family: 'Boogaloo', cursive;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+
+}
+.container-fluid {
+    background-color: rgb(110, 109, 109);
+}

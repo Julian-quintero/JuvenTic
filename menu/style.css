@@ -10,3 +10,70 @@
     font-family: 'Anton', sans-serif;
 }
 
+.navbar {
+    padding-top: 0 !important;
+    background-color: rgb(110, 109, 109);  
+    width: 100%;
+}
+.nav-item {
+    padding-right: 50px;
+}
+.nav-link{
+    color: white !important; 
+}
+.navbar-logo {
+    font-family: 'Boogaloo', cursive;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.container-fluid2 {
+    background-color: rgb(110, 109, 109);  
+    width: 100%;
+}
+
+
+footer {
+    width: 100%;
+    background-color: rgb(138, 117, 117);
+}
+footer img {
+    width: 200px;
+    padding: 20px;
+    margin-right: 50px;
+}
+footer div {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 30px;
+}
+footer table {
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+footer iframe {
+    padding-top: 30px;
+}
+.container2 {
+    width: 40%;
+    min-width: 300px;
+    color: white;
+}
+.row2-cols-3 {
+    width: 100%;
+}
+.col2 {
+    min-width: 100px;
+    text-align: initial;
+}
+.col2-10 {
+    padding: initial;
+    padding-bottom: 5px;
+}
+
+
