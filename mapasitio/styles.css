@@ -1,16 +1,24 @@
 .container{
 
-    margin-top: 30px;
+    margin-top: 4%;
+
 
 }
 
 div h1{
 
-    margin-bottom: 30px;
-    font-size: 60px;
+    margin-bottom: 1.5%;
+    margin-left: -6%;
+    font-size: 400%;
     font-family: 'Anton', sans-serif;
     color: brown;
     
+}
+
+.link:hover{
+
+    color: #6e6d6d;
+
 }
 
 [href]{
@@ -22,7 +30,8 @@ div h1{
 
 a h2{
 
-    font-size: 25px;
+    
+    font-size: 160%;
     font-family: 'Anton', sans-serif;
     color: brown;
 
