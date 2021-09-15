@@ -78,6 +78,25 @@ body {
     width: 60%;
     color: white;
 }
+/* Seccion de Recomendados del chef */
+.recommended {
+    padding: 50px 50px 50px 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.recommended h2 {
+    color: brown;
+    font-family: 'Anton', sans-serif;
+    padding-bottom: 20px;
+}
+.recommended .col {
+    padding-right: 30px;
+    padding-bottom: 30px;
+    min-width: 200px;
+}
+.recommended img {
+    width: 70%;
+}
 /* Contenido de las recomendaciones y el menu */
 .content {
     display: flex;
@@ -101,9 +120,18 @@ body {
 }
 .card {
     background-color: initial !important;
+    border: 20px solid rgba(0,0,0,.125) !important;
+    border-radius: .50rem !important;
+}
+.card-body {
+    padding: initial !important;
+    color: white;
 }
 .container {
     text-align: center;
+}
+.content-event .col {
+    min-width: 150px;
 }
 .content-event b {
     font-size: 40px;
@@ -173,7 +201,7 @@ footer div {
 footer iframe {
     padding-top: 30px;
 }
-.container {
+.footer-container {
     width: 40%;
     min-width: 300px;
     color: white;
