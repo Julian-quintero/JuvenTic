@@ -112,7 +112,14 @@ section {
     height: 85px !important;
 }
 
-
+/* Estilos del Footer*/
+.footer-a {
+    text-decoration: initial !important;
+    color: white !important;
+}
+.footer-a:hover {
+    font-weight: bold;
+}
 footer {
     width: 100%;
     background-color: rgb(49, 1, 1);
