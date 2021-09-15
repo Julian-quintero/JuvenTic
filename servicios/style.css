@@ -30,3 +30,58 @@
 .container-fluid {
     background-color: rgb(110, 109, 109);
 }
+
+
+
+
+.footer-a {
+    text-decoration: initial !important;
+    color: white !important;
+}
+.footer-a:hover {
+    font-weight: bold;
+}
+footer {
+    width: 100%;
+    background-color: rgb(49, 1, 1);
+}
+footer img {
+    width: 200px;
+    padding: 20px;
+    margin-right: 50px;
+}
+footer div {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 30px;
+}
+footer iframe {
+    padding-top: 30px;
+}
+.container2 {
+    width: 40%;
+    min-width: 300px;
+    color: white;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-row-cols-3 {
+    width: 100%;
+}
+.footer-col {
+    width: 33%;
+    text-align: initial;
+    padding: 20px 0;
+}
+.footer-col-10 {
+    padding: initial;
+    padding-bottom: 5px;
+    width: 83.33333333%;
+}
+.footer-col-8 {
+    width: 66.66666667%;
+}
