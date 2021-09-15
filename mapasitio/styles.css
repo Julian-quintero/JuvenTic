@@ -1,12 +1,12 @@
 .container{
 
-    margin-top: 50px;
-    
+    margin-top: 30px;
+
 }
 
 div h1{
 
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     font-size: 60px;
     font-family: 'Anton', sans-serif;
     color: brown;
@@ -33,4 +33,3 @@ a h2{
     margin-bottom: 20px;
 
 }
-

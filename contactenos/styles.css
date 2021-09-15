@@ -1,42 +1,37 @@
-.title{
+/* Main */
+.titlecontac{
 
-    /* margin-top: 30px;
-    margin-left: -40px; */
+    margin-top: 30px;
+    margin-left: -40px;
     font-size: 60px;
     font-family: 'Anton', sans-serif;
     color: brown;
 
 }
 
-/* .text{
+[href]{
+
+    text-decoration: none;
+    color: brown;
+
+}
+
+.textcontac{
 
     margin-top: 50px;
     margin-left: -40px;
 
-} */
+}
 
-/* form{
+form{
 
     margin-top: 158px;
 
-} */
+}
 
 .form-select{
 
     margin-bottom: 20px;
-
-}
-
-.form-check-input{
-
-    background-color: brown;
-    border-color: brown;
-
-}
-
-option #optiond{
-
-    color: #ced4da;
 
 }
 
@@ -46,12 +41,12 @@ option #optiond{
 
 }
 
+
 .form-check-label{
 
     margin-bottom: 20px;
     
 }
-
 
 #buttonsent{
 
