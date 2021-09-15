@@ -1,0 +1,36 @@
+.container{
+
+    margin-top: 50px;
+    
+}
+
+div h1{
+
+    margin-bottom: 70px;
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+    color: brown;
+    
+}
+
+[href]{
+
+    text-decoration: none;
+    color: brown;
+
+}
+
+a h2{
+
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    color: brown;
+
+}
+
+.row{
+
+    margin-bottom: 20px;
+
+}
+

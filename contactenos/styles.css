@@ -1,0 +1,62 @@
+.title{
+
+    /* margin-top: 30px;
+    margin-left: -40px; */
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+    color: brown;
+
+}
+
+/* .text{
+
+    margin-top: 50px;
+    margin-left: -40px;
+
+} */
+
+/* form{
+
+    margin-top: 158px;
+
+} */
+
+.form-select{
+
+    margin-bottom: 20px;
+
+}
+
+.form-check-input{
+
+    background-color: brown;
+    border-color: brown;
+
+}
+
+option #optiond{
+
+    color: #ced4da;
+
+}
+
+.form-control{
+
+    margin-bottom: 20px;
+
+}
+
+.form-check-label{
+
+    margin-bottom: 20px;
+    
+}
+
+
+#buttonsent{
+
+    width: 100%;
+    background-color: brown;
+    border-color: brown;
+
+}
