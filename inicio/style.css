@@ -4,9 +4,8 @@ body {
 
 #nav {
     background-color: rgba(110, 109, 109,.5);
-    position: absolute;
-    top: 0;
     width: 100%;
+    z-index: 10;
 }
 /* .navbar {
     padding: 0 !important;
@@ -33,7 +32,8 @@ body {
     background-position: center;
     background-color: rgba(0, 0, 0, .5);
     background-blend-mode: darken;
-    padding: 70px 0;
+    padding: 180px 0 80px 0;
+    margin-top: -200px;
 
     color: white;
     font-size: 40px;
@@ -52,8 +52,12 @@ body {
     padding-top: 50px;
     padding-bottom: 40px;
 }
-.carousel-item p {
-    width: 80% !important;
+.carousel-item a {
+    text-decoration: none;
+    color: rgb(240, 74, 14);
+}
+.carousel-item a:hover {
+    color: rgb(54, 52, 52);
 }
 
 .cover p span {
@@ -78,6 +82,25 @@ body {
     width: 60%;
     color: white;
 }
+/* Seccion de Recomendados del chef */
+.recommended {
+    padding: 50px 50px 50px 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.recommended h2 {
+    color: brown;
+    font-family: 'Anton', sans-serif;
+    padding-bottom: 20px;
+}
+.recommended .col {
+    padding-right: 30px;
+    padding-bottom: 30px;
+    min-width: 200px;
+}
+.recommended img {
+    width: 70%;
+}
 /* Contenido de las recomendaciones y el menu */
 .content {
     display: flex;
@@ -101,10 +124,47 @@ body {
 }
 .card {
     background-color: initial !important;
+    border: initial !important;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.card-body {
+    padding: 1rem 1.5rem !important;
+    color: white;
+}
+/* Alineacion de Tarjetas de eventos */
+.cover-small {
+    height: 100px;
+    margin-top: initial;
+    padding: initial;
+    background-blend-mode: normal;
+    background-color: initial;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+.card-title {
+    min-height: 2.5rem;
+    font-weight: bold;
+}
+.car-text {
+    min-height: 10rem;
+}
+
+.card-body a {
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 .container {
     text-align: center;
 }
+/* .content-event .col {
+    min-width: 150px;
+} */
 .content-event b {
     font-size: 40px;
     color: white;
@@ -119,20 +179,28 @@ body {
 
 
 /* Estilos del Slider */
-.carousel-item {
+.content-testimonials {
     text-align: center;
 }
-.carousel-item img {
+.content-testimonials img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 3px solid rgb(190, 190, 190);
     padding: 5px;
 }
-.carousel-item p {
+.content-testimonials p {
     width: 50%;
     display: inline-block;
     padding: 0 50px;
+}
+.content-testimonials div {
+    display: inline-block;
+}
+@media (max-width:500px) {
+    .content-testimonials div {
+        display: block;
+    }
 }
 /* .carousel-control-prev-icon {
     background-image: url("img/flecha-izquierda.png") !important;
@@ -169,23 +237,32 @@ footer div {
     vertical-align: middle;
     padding: 20px 30px;
 }
-
 footer iframe {
     padding-top: 30px;
 }
-.container {
+.container2 {
     width: 40%;
     min-width: 300px;
     color: white;
 }
-.row-cols-3 {
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-row-cols-3 {
     width: 100%;
 }
-.col {
-    min-width: 100px;
+.footer-col {
+    width: 33%;
     text-align: initial;
+    padding: 20px 0;
+    min-width: 100px;
 }
-.col-10 {
+.footer-col-10 {
     padding: initial;
     padding-bottom: 5px;
+    width: 83.33333333%;
+}
+.footer-col-8 {
+    width: 66.66666667%;
 }

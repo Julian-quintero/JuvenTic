@@ -64,6 +64,17 @@ section {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    padding-left: 100px;
+}
+@media (max-width:611px) {
+    .work-team {
+        padding-left: 50px;
+    }
+}
+@media (max-width:510px) {
+    .work-team {
+        padding-left: initial;
+    }
 }
 .work-team div {
     grid-column: span 2;
@@ -88,6 +99,7 @@ section {
 
 .carousel-item {
     text-align: center;
+    vertical-align: middle;
 }
 .carousel-item img {
     width: 150px;
@@ -95,6 +107,14 @@ section {
     border-radius: 50%;
     border: 3px solid rgb(190, 190, 190);
     padding: 5px;
+}
+.carousel-item div {
+    display: inline-block;
+}
+@media (max-width:500px) {
+    .carousel-item div {
+        display: block;
+    }
 }
 .carousel-item p {
     width: 50%;
