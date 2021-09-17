@@ -76,6 +76,7 @@ footer iframe {
     width: 33%;
     text-align: initial;
     padding: 20px 0;
+    min-width: 100px;
 }
 .footer-col-10 {
     padding: initial;
