@@ -88,6 +88,7 @@ section {
 
 .carousel-item {
     text-align: center;
+    vertical-align: middle;
 }
 .carousel-item img {
     width: 150px;

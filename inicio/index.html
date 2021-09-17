@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Grupo 6</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -13,11 +13,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
   <nav id="nav" class="navbar navbar-expand-lg navbar-light ">
-    <a class="navbar-logo  " href="#">
+    <a class="navbar-logo" class="navbar-brand " href="#">
         <h1>sal&salsa</h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,11 +53,11 @@
         </div>
         <div class="carousel-item">
           <img src="img/logo2.png"  alt=""><br>
-          <p>Sabados al 30% de descuento</p>
+          <p>Sabados al <u>30%</u> de <i>descuento</i></p>
         </div>
         <div class="carousel-item">
           <img src="img/logo2.png" alt=""><br>
-          <p>Conoce nuestros servicios</p>
+          <p>Conoce nuestros <a href="../servicios/servicios.html">Servicios</a></p>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -99,7 +101,9 @@
         </div>
       </div>
       <div class="col">
-        <img src="img/menu.png" alt="imagen del menu">
+        <a href="../menu/menu.html">
+          <img src="img/menu.png" alt="imagen del menu">
+        </a>
       </div>
     </div>
   </div>
@@ -109,26 +113,26 @@
     <div class="container mt-5">
       <div class="row">
         
-        <div class="col">
-          <div class="card" style="width: 18rem;">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
             <img src="img/icono1.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Evento 1</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
-              <a href="#" class="btn btn-primary">Ver</a>
+              <a href="#"><i class="fas fa-angle-down"></i></a>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div class="card" style="width: 18rem;">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
             <img src="img/icono2.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Evento 2</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
-              <a href="#" class="btn btn-primary">Ver</a>
+              <a href="#"><i class="fas fa-angle-down"></i></a>
             </div>
           </div>
         </div>
@@ -160,17 +164,8 @@
       </div>
     </div>
    
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quas quos? Cum qui magnam maiores perferendis
-      error nostrum animi porro, eaque maxime consectetur id ratione? Nobis, et! Animi, quam? Eaque.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusamus dolore saepe totam harum omnis
-      itaque consequuntur vero ut veniam est ipsa unde repudiandae modi in odio, aliquam, voluptatem laboriosam!
-    </p>
   </div>
 
-
-
-  </div>
 
 
 
@@ -178,33 +173,37 @@
 
   <br><br>
 
-  <div class="carousel-testimonials">
-
+  <div class="testimonials">
+    <div class="content-testimonials">
+      <div>
+        <img src="img/testimonio1.png" alt="">
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
   </div>
 
 
   <br><br>
   <footer>
     <a href="../inicio/index.html" style="text-decoration: none;">
-      <img src="img/logo2.png" alt="logo-restaurante">
+        <img src="img/logo2.png" alt="logo-restaurante">
     </a>
-    <div class="footer-container" style="width: 40%;">
-      <div class="row row-cols-3">
-        <div class="col"><a class="footer-a" href="../mapasitio/index.html">MAPA DEL SITIO</a></div>
-        <div class="col"><a class="footer-a" href="../contactenos/index.html">CONTACTANOS</a></div>
-        <div class="col"><a class="footer-a" href="#">RESERVAS</a></div>
-        <div class="col col-10">Restaurante Sal y Salsa Ltda.</div>
-        <div class="col col-10">Cl. 94a #Nº 11 A – 32 Ofc 505, Bogotá</div>
-        <div class="col col-10">Tel: 324 5694104</div>
-        <div class="col col-8">&copy; Copyright 2021 - Grupo 6 JuvenTIC</div>
+
+    <div class="container2" style="width: 40%;">
+        <div class="footer-row footer-row-cols-3">
+          <div class="footer-col"><a class="footer-a" href="../mapasitio/index.html">MAPA DEL SITIO</a></div>
+          <div class="footer-col"><a class="footer-a" href="../contactenos/index.html">CONTACTANOS</a></div>
+          <div class="footer-col"><a class="footer-a" href="#">RESERVAS</a></div>
+          <div class="footer-col footer-col-10">Restaurante Sal y Salsa Ltda.</div>
+          <div class="footer-col footer-col-10">Cl. 94a #Nº 11 A – 32 Ofc 505, Bogotá</div>
+          <div class="footer-col footer-col-10">Tel: 324 5694104</div>
+          <div class="footer-col footer-col-8">&copy; Copyright 2021 - Grupo 6 JuvenTIC</div>
+        </div>
       </div>
-    </div>
     <div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.06562997275734!2d-74.04702714804654!3d4.678404958017497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b4253e7a719%3A0x70081f2aa809d534!2sOficinas%20de%20Google%20Colombia!5e0!3m2!1ses!2sco!4v1631472404904!5m2!1ses!2sco"
-        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.06562997275734!2d-74.04702714804654!3d4.678404958017497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b4253e7a719%3A0x70081f2aa809d534!2sOficinas%20de%20Google%20Colombia!5e0!3m2!1ses!2sco!4v1631472404904!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-  </footer>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
