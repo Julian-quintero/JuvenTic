@@ -52,9 +52,6 @@ body {
     padding-top: 50px;
     padding-bottom: 40px;
 }
-.carousel-item p {
-    width: 80% !important;
-}
 .carousel-item a {
     text-decoration: none;
     color: rgb(240, 74, 14);
@@ -127,15 +124,33 @@ body {
 }
 .card {
     background-color: initial !important;
-    /* border: 10px solid rgba(0,0,0,.125) !important; */
-    /* border-radius: .50rem !important; */
+    border: initial !important;
     text-align: left;
     margin-bottom: 50px;
 }
 .card-body {
-    padding: initial !important;
+    padding: 1rem 1.5rem !important;
     color: white;
 }
+/* Alineacion de Tarjetas de eventos */
+.cover-small {
+    height: 100px;
+    margin-top: initial;
+    padding: initial;
+    background-blend-mode: normal;
+    background-color: initial;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+.card-title {
+    min-height: 2.5rem;
+    font-weight: bold;
+}
+.car-text {
+    min-height: 10rem;
+}
+
 .card-body a {
     font-size: 40px;
     text-decoration: none;
