@@ -1,8 +1,7 @@
-/* Main */
 .titlecontac{
 
     margin-top: 10%;
-    margin-left: -12.2%;
+    /* margin-left: -12.2%; */
     font-size: 400%;
     font-family: 'Anton', sans-serif;
     color: brown;
@@ -12,15 +11,13 @@
 .textcontac{
 
     margin-top: 5%;
-    margin-left: -12.2%;
+    /* margin-left: -12.2%; */
 
 }
 
 form{
 
     margin-top: 15%;
-    margin-right: -12.2%;
-    margin-left: 5%;
 
 }
 
@@ -35,7 +32,6 @@ form{
     margin-bottom: 4%;
 
 }
-
 
 .form-check-label{
 
