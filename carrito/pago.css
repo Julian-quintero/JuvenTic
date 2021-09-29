@@ -1,0 +1,15 @@
+.contenedor{
+    background-color: #dedfd9;
+    border-radius: .40rem;
+    width: 25%;
+    height: 450px;
+}
+
+.container p{
+    color: rgb(49, 1, 1);
+    font-size: 150%;
+    font-family: 'Anton', sans-serif;
+    width: min-content;
+    text-align: center;
+}
+
