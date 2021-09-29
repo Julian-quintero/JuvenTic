@@ -1,14 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito de compras</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
-</head>
-<body>
-    <i class="fas fa-trash" style="color:black"></i>
-    <i class="fas fa-edit"></i>
-</body>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <i class="fas fa-trash" style="color:black"></i>
+    <i class="fas fa-edit"></i> -->
+
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light " style='background-color: #6E6D6D;color:white;'>
+        <a class="navbar-brand  " href="#" style='margin-left: 50px;'><h1 style='color:white;'>sal&salsa</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        <div class="collapse navbar-toggle navbar-collapse"   id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto " style='margin-right: 50px;'>
+            <a class="nav-item nav-link active mr-10" style='margin-right: 50px;color:white;' href="../inicio/index.html">Inicio </a>
+            <a class="nav-item nav-link" href="../nosotros/nosotros.html" style='margin-right: 50px;color:white;'>Nosotros</a>
+            <a class="nav-item nav-link" href="../servicios/servicios.html" style='margin-right: 50px;color:white;'>Servicios</a>
+            <a class="nav-item nav-link" href="../menu/menu.html" style='margin-right: 50px;color:white;'>Menu</a>
+            <a class="nav-item nav-link " href="../contactenos/contactenos.html" style='margin-right: 50px;color:white;'>Contacto</a>
+            <a class="nav-item nav-link " href="../contactenos/contactenos.html"> <img  src="./cart2.svg" style='margin-right: 50px;color:white; height:30px;width:30px; fill: white;'></img></a>
+          </div>
+        </div>
+      </nav>
+
+    <div class="main">
+      <div class="subtitle">
+        <p class="title" style="padding: 10px">
+          <span>Carrito de compra</span>
+        </p>
+      </div>
+
+      <div class="textBox">
+        <div id="container" class="insideTextBox">
+          <div id="img" style="margin: 10px">
+            <img
+              src="./1.jpg"
+              style="
+                width: 150px;
+                height: 150px;
+                border-radius: 10px;
+                margin-right: 20px;
+              "
+            />
+          </div>
+
+          <div
+            id="texto"
+            style="display: flex; flex-direction: column;"
+          >
+            <div class="titleTextBox">
+              <p class="textFood">lorem input door sin</p>
+
+              <p class="textFood" style="margin-left: 10px">$25.000</p>
+
+              <p style="margin-left: 10px">
+                <button class="link"> <i class="fas fa-trash" style="color: black"></i></button>
+              </p>
+            </div>
+
+            <div class="descTextBox">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </div>
+
+            <div>
+              <div
+                style="display: flex; flex-direction: row; margin-bottom: 10px"
+              >
+                <div
+                  style="
+                    margin-right: 10px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    margin-left: 10px;
+                  "
+                >
+                  <button class="link">-</button>
+                </div>
+
+                <div>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    style="width: 50px"
+                  />
+                </div>
+                <div
+                  style="margin-left: 10px; font-weight: 400; font-size: 15px"
+                >
+                  <button class="link">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>col2</div>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-danger">
+          Continuar comprando
+        </button>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

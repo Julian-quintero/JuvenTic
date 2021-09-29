@@ -1,0 +1,119 @@
+html {
+    font-size: 100%; /* 100% = 16px */
+  }
+
+.title {
+   
+    display: inline-block;
+    text-align: right;
+    font-size: 2rem;
+}
+
+.textFood {
+    color: #472933;
+    font-size: 1.8rem;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+}
+.title span {
+    color: #472933;
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.subtitle{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    padding: 10;
+}
+
+
+.textBox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.insideTextBox{
+
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    background-color: yellow;
+    align-items: center;
+    justify-items: center;
+    margin-left: 30px;
+}
+
+.titleTextBox{
+    display: flex;
+    flex-direction: row;               
+    align-items: center;
+    justify-items: center;
+}
+
+.descTextBox{
+    display: flex;
+    width: 70%;
+    text-align: justify;
+    background-color: aquamarine;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+
+
+
+
+.navbar {
+    padding-top: 0 !important;
+    background-color: rgb(110, 109, 109);  
+    width: 100%;
+}
+.nav-item {
+    padding-right: 50px;
+}
+.nav-link{
+    color: white !important; 
+}
+.navbar-logo {
+    font-family: 'Boogaloo', cursive;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
+
+button.link { background:none; border:none; }
+
+
+@media (min-width: 1080px) {
+    html {
+      font-size: 125%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    html {
+      font-size: 80%;
+    }
+  }
