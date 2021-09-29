@@ -240,3 +240,26 @@ footer iframe {
 
 }
 
+
+
+
+
+
+
+
+
+.contenedor2{
+    background-color: #ff3d01;
+    width: min-content;
+}
+
+.col a i{
+    color: white;
+}
+
+.col{
+    text-align: center;
+    padding: 20% 0% 20%;
+}
+
+
