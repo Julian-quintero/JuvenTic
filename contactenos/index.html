@@ -52,21 +52,21 @@
             </p>
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-            <form>
-              <input type="text" class="form-control" id="validationCustom01" placeholder="Asunto del contacto" maxlength="100" minlength="10" required>
-              <input type="text" class="form-control" id="validationCustom01" onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))" placeholder="Nombre completo" maxlength="100" minlength="10" required>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" maxlength="100" minlength="10" required >
-              <select class="form-select" required>
+            <form action="https://formspree.io/f/xzbywzqg" method="POST">
+              <input type="text" class="form-control" id="validationCustom01" name="Asunto" placeholder="Asunto del contacto" maxlength="100" minlength="10" required>
+              <input type="text" class="form-control" id="validationCustom01" name="Nombre" onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))" placeholder="Nombre completo" maxlength="100" minlength="10" required>
+              <input type="email" class="form-control" id="exampleFormControlInput1" name="Email" placeholder="Email" maxlength="100" minlength="10" required >
+              <select class="form-select" name="Servicio" required>
                 <option selected>Servicios</option>
-                <option value="1">Celebración de cumpleaños</option>
-                <option value="2">Aniversarios</option>
-                <option value="3">Fiestas infantiles</option>
-                <option value="4">Declaraciones o propuestas</option>
-                <option value="5">Despedidas</option>
-                <option value="6">Cena con amigos</option>
+                <option value="Celebración-De-Cumpleaños">Celebración de cumpleaños</option>
+                <option value="Aniversario">Aniversarios</option>
+                <option value="Fiesta-Infantil">Fiestas infantiles</option>
+                <option value="Declaración- Propuesta">Declaraciones o propuestas</option>
+                <option value="Despedida">Despedidas</option>
+                <option value="Cena-con-Amigos">Cena con amigos</option>
               </select>
               <div class="mb-3">
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Comentarios o solicitudes especiales"rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="comentarios" placeholder="Comentarios o solicitudes especiales"rows="3"></textarea>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required checked style="background-color: #a52a2a; border-color: #a52a2a;">
