@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+}
+.navbar {
+    padding-top: 0 !important;
+}
+.nav-item {
+    padding-right: 50px;
+}
+.nav-link{
+    color: white !important; 
+}
+.navbar-logo {
+    font-family: 'Boogaloo', cursive;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+
+}
+.container-fluid {
+    background-color: rgb(110, 109, 109);
+}
+
+/* Inicio de la seccion Haz tu pedido */
+.contenido {
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenido h1 {
+    color: brown;
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 50px;
+}
+/* Alinear Items e imagen*/
+.contenido .img {
+    width: 20%;
+    min-width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+.contenido .info {
+    float: left;
+    width: 55%;
+}
+.contenido img {
+    width: 100%;
+}
+/* Div para añadir al carrito */
+.contenido .cart {
+    text-align: center;
+    width: 20%;
+    min-width: 200px;
+    float: left;
+    padding: 10px;
+}
+.cart .add-cart {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+}
+/* Boton del Carrito */
+.nav-link.active {
+    background-color: initial !important;
+}
+
+/* Estilos del Footer*/
+.footer-a {
+    text-decoration: initial !important;
+    color: white !important;
+}
+.footer-a:hover {
+    font-weight: bold;
+}
+footer {
+    width: 100%;
+    background-color: rgb(49, 1, 1);
+}
+footer img {
+    width: 200px;
+    padding: 20px;
+    margin-right: 50px;
+}
+footer div {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 30px;
+}
+footer table {
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+footer iframe {
+    padding-top: 30px;
+}
+.container {
+    width: 40%;
+    min-width: 300px;
+    color: white;
+}
+.row-cols-3 {
+    width: 100%;
+}
+.col {
+    min-width: 100px;
+    text-align: initial;
+}
+.col-10 {
+    padding: initial;
+    padding-bottom: 5px;
+}
