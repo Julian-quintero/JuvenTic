@@ -28,6 +28,7 @@ function addToCarritoItem(e) {
 
     addItemCarrito(newItem);
 }
+/* Agregar */
 
 function addItemCarrito(newItem) {
     
@@ -54,32 +55,35 @@ function renderCarrito(){
         const div = document.createElement('div');
         div.classList.add('itemCarrito');
         const content = `
-            <div>
-                <div class="img">
-                    <img src="${item.img}" class="product-img">
-                </div>
-                <div class="info">
-                    <h4 class="title">${item.title}</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur possimus odit nulla alias, dolore numquam, vitae officia reprehenderit, maiores quo nesciunt. Ipsum, ab debitis. Atque necessitatibus obcaecati dolore unde quaerat.
-                    </p>
-                    <p>
-                        $<span class="price">${item.price}</span>
-                    </p>
-                </div>
-                <div class="cart">
-                    <button class="add-cart button">
-                        <b>CANTIDAD</b>
-                        <input type="number" value="${item.quantity}" class="input">
-                    </button>
-                    <button class="btn-delete"> <i class="fas fa-trash" style="color: black"></i></button>
-                </div>
+        <div style="width: 70%; margin-bottom: 40px;">
+            <div class="img">
+                <img src="${item.img}" class="product-img" style="border-radius: 10px;">
             </div>
+            <div class="info">
+                <h4 class="title" style="display: inline-block;">${item.title}</h4> 
+                <h4 style="display: inline-block;">&nbsp - &nbsp $<span class="price">${item.price} &nbsp; </span> &nbsp; </h4>
+                <div style="display: inline-block;">
+                    <button class="btn-delete btn-light"> <i class="fas fa-trash" style="color: black"></i></button>
+                </div>
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur possimus odit nulla alias, dolore numquam, vitae.
+                </p>
+                <button class="btn-danger"><i class="fas fa-minus"></i></button>
+                <input type="number" style="width: 20%;" class="input" value="${item.quantity}"> 
+                <button class="btn-success"><i class="fas fa-plus"></i></button>
+            </div>  
+        </div>
         `
         div.innerHTML = content;
         contenidoCarrito.append(div);
 
         div.querySelector('.btn-delete').addEventListener('click', removeItemCarrito);
+        div.querySelector('.input').addEventListener('change', sumaCantidad)
+        // Boton Incrementar
+        div.querySelector('.btn-success').addEventListener('click',increment)
+        // Boton Disminuir
+        div.querySelector('.btn-danger').addEventListener('click',decrement)
     });
     carritoTotal();
 }
@@ -92,7 +96,12 @@ function carritoTotal() {
         total = total + precio*item.quantity;
     });
 
-    itemCartTotal.innerHTML = `<h2>Total:  $ ${total}.000</h2>`
+    if(total == 0)
+        itemCartTotal.innerHTML = `<h2>Total:  $ ${total}</h2>`
+    else
+        itemCartTotal.innerHTML = `<h2>Total:  $ ${total}.000</h2>`
+    
+    addLocalStorage();
 }
 
 function removeItemCarrito(e){
@@ -107,4 +116,70 @@ function removeItemCarrito(e){
     }
     div.remove();
     carritoTotal();
+}
+
+function sumaCantidad(e){
+    const sumaInput = e.target;
+    console.log(sumaInput)
+    const div = sumaInput.closest(".itemCarrito");
+    const title = div.querySelector('.title').textContent;
+
+    carrito.forEach(item => {
+        if(item.title.trim() === title){
+            sumaInput.value < 1 ? (sumaInput.value = 1) : sumaInput.value;
+            item.quantity = sumaInput.value;
+            carritoTotal();
+        }
+    });
+    // console.log(carrito);
+}
+
+// Boton Incrementar
+function increment(e){
+    const increment = e.target;
+    console.log(increment);
+    const div = increment.closest(".itemCarrito");
+    console.log(div)
+    const title = div.querySelector('.title').textContent;
+    let input = div.querySelector('.input');
+    console.log("---------",input.value);
+    input.value++;
+    carrito.forEach(item => {
+        if(item.title.trim() === title){
+            item.quantity = input.value;
+            console.log("--Entre en el if--")
+            carritoTotal();
+        }
+    });
+}
+// Boton Disminuir
+function decrement(e){
+    const increment = e.target;
+    console.log(increment);
+    const div = increment.closest(".itemCarrito");
+    console.log(div)
+    const title = div.querySelector('.title').textContent;
+    let input = div.querySelector('.input');
+    console.log("---------",input.value);
+    input.value--;
+    carrito.forEach(item => {
+        if(item.title.trim() === title){
+            input.value < 1 ? (input.value = 1) : input.value;
+            item.quantity = input.value;
+            console.log("--Entre en el if--")
+            carritoTotal();
+        }
+    });
+}
+// LocalStorage
+window.onload = function(){
+    const storage = JSON.parse(localStorage.getItem('carrito'));
+    if(storage){
+        carrito = storage;
+        renderCarrito();
+    }
+}
+
+function addLocalStorage(){
+    localStorage.setItem('carrito', JSON.stringify(carrito));
 }

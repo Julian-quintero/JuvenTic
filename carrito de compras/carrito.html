@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sal&Salsa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light " style='background-color: #6E6D6D;color:white;'>
+        <a class="navbar-brand  " href="#" style='margin-left: 50px;'><h1 style='color:white;'>sal&salsa</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        <div class="collapse navbar-toggle navbar-collapse"   id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto " style='margin-right: 50px;'>
+                <a class="nav-item nav-link active mr-10" style='margin-right: 50px;color:white;' href="../inicio/index.html">Inicio </a>
+                <a class="nav-item nav-link" href="../nosotros/nosotros.html" style='margin-right: 50px;color:white;'>Nosotros</a>
+                <a class="nav-item nav-link" href="../servicios/servicios.html" style='margin-right: 50px;color:white;'>Servicios</a>
+                <a class="nav-item nav-link" href="../menu/menu.html" style='margin-right: 50px;color:white;'>Menu</a>
+                <a class="nav-item nav-link " href="../contactenos/index.html" style='margin-right: 50px;color:white;'>Contacto</a>
+                <a class="nav-item nav-link " href="carrito.html"> <img  src="img/cart2.svg" style='margin-right: 50px;color:white; height:30px;width:30px; fill: white;'></img></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contenido">
+        <h1>Carrito de compra</h1>
+        
+        <!-- <div style="width: 70%; margin-bottom: 40px;">
+            <div class="img">
+                <img src="img/foto1.png" class="product-img" style="border-radius: 10px;">
+            </div>
+            <div class="info">
+                <h4 class="title" style="display: inline-block;">Producto 1</h4> 
+                <h4 style="display: inline-block;">$<span class="price">21.000 &nbsp; </span> &nbsp; </h4>
+                <div style="display: inline-block;">
+                    <button class="btn-delete btn-light"> <i class="fas fa-trash" style="color: black"></i></button>
+                </div>
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur possimus odit nulla alias, dolore numquam, vitae.
+                </p>
+                <button class="btn-danger" onclick="decrement()" ><i class="fas fa-minus"></i></button>
+                <input type="number" style="width: 20%;" class="input" id="number-product"> 
+                <button class="btn-success" onclick="increment()"><i class="fas fa-plus"></i></button>
+            </div>  
+        </div> -->
+
+
+        <div class="div-total">
+            <div class="carritoTotal"></div>
+            <button class="pay btn">
+                <b>PAGAR AHORA</b>
+            </button>
+        </div>
+
+    </div>
+    <div class="contenido contenido-carrito">
+        
+    </div>
+    
+    <div style="display: inline-block; width: 100%; text-align: center; margin: 80px 0;">
+        <a href="../contactenos/index.html" style="display: inline-block; width: 40%; text-align: right; margin-right: 10px;">
+            <button class="btn btn-info">
+                <i class="fas fa-clipboard-list"></i>
+                <b>&nbsp; Realizar reservacion</b>
+            </button>
+        </a>
+        <a href="pedidos.html" style="display: inline-block; width: 40%; text-align: left; margin-left: 10px;">
+            <button class="btn btn-danger">
+                <i class="fas fa-shopping-cart"></i>
+                <b>&nbsp; Continuar comprando</b>
+            </button>
+        </a>
+    </div>
+    
+    
+    <!-- <script>
+        function increment(){
+            document.getElementById("number-product").value++;
+        }
+        function decrement(){
+            document.getElementById('number-product').value--;
+        } 
+    </script> -->
+   
+
+   <br><br>
+
+
+    <footer>
+        <a href="../inicio/index.html" style="text-decoration: none;">
+            <img src="img/logo2.png" alt="logo-restaurante">
+        </a>
+        <div class="container" style="width: 40%;">
+            <div class="row row-cols-3">
+              <div class="col"><a class="footer-a" href="../mapasitio/index.html">MAPA DEL SITIO</a></div>
+              <div class="col"><a class="footer-a" href="../contactenos/index.html">CONTACTANOS</a></div>
+              <div class="col"><a class="footer-a" href="#">RESERVAS</a></div>
+              <div class="col col-10">Restaurante Sal y Salsa Ltda.</div>
+              <div class="col col-10">Cl. 94a #Nº 11 A – 32 Ofc 505, Bogotá</div>
+              <div class="col col-10">Tel: 324 5694104</div>
+              <div class="col col-8">&copy; Copyright 2021 - Grupo 6 JuvenTIC</div>
+            </div>
+          </div>
+        <div>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.06562997275734!2d-74.04702714804654!3d4.678404958017497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b4253e7a719%3A0x70081f2aa809d534!2sOficinas%20de%20Google%20Colombia!5e0!3m2!1ses!2sco!4v1631472404904!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

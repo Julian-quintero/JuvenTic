@@ -61,9 +61,39 @@ body {
     padding: 10px;
     font-size: 15px;
 }
-/* Boton del Carrito */
+/* Boton del Carrito - nav*/
 .nav-link.active {
     background-color: initial !important;
+}
+/* Vista Carrito - Total */
+.div-total {
+    background-color: #dedfd9;
+    border-radius: .40rem;
+    width: 25%;
+    min-width: 200px;
+    padding: 40px 10px;
+    position: fixed;
+    right: 40px;
+    top: 35%;
+    text-align: center;
+}
+.div-total .pay {
+    background-color: orangered;
+    color: white;
+    width: 80%;
+    margin: 20px 0;
+    padding: 10px 5px;
+}
+/* Div agregado mediante funcion de JavaScript */
+.itemCarrito {
+    margin-bottom: 40px;
+}
+.itemCarrito h4 {
+    color: #472933;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    
 }
 
 /* Estilos del Footer*/

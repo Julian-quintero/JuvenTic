@@ -14,30 +14,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
-    <nav id="nav" class="navbar navbar-expand-lg navbar-light nav-tabs" style='background-color: #6E6D6D;color:white;'>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light " style='background-color: #6E6D6D;color:white;'>
         <a class="navbar-brand  " href="#" style='margin-left: 50px;'><h1 style='color:white;'>sal&salsa</h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
         <div class="collapse navbar-toggle navbar-collapse"   id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto " style='margin-right: 50px;'>
-                <a class="nav-item nav-link mr-10" style='margin-right: 50px;color:white;' href="../inicio/index.html">Inicio </a>
+                <a class="nav-item nav-link active mr-10" style='margin-right: 50px;color:white;' href="../inicio/index.html">Inicio </a>
                 <a class="nav-item nav-link" href="../nosotros/nosotros.html" style='margin-right: 50px;color:white;'>Nosotros</a>
                 <a class="nav-item nav-link" href="../servicios/servicios.html" style='margin-right: 50px;color:white;'>Servicios</a>
                 <a class="nav-item nav-link" href="../menu/menu.html" style='margin-right: 50px;color:white;'>Menu</a>
                 <a class="nav-item nav-link " href="../contactenos/index.html" style='margin-right: 50px;color:white;'>Contacto</a>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Pedidos</button>
-                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
-                        <img  src="img/cart2.svg" style='margin: 0 15px;color:white; height:30px;width:30px; fill: white;'></img>
-                    </button>
-                </div>
-                
+                <a class="nav-item nav-link " href="carrito.html"> <img  src="img/cart2.svg" style='margin-right: 50px;color:white; height:30px;width:30px; fill: white;'></img></a>
             </div>
         </div>
     </nav>
     
     <div class="tab-content" id="nav-tabContent">
+
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
             <div class="contenido">
                 <h1>Haz tu pedido</h1>
@@ -55,8 +50,6 @@
                         </p>
                     </div>
                     <div class="cart">
-                        <b>CANTIDAD</b><br>
-                        <input type="number" style="width: 30%;">
                         <button class="add-cart button">
                             <i class="fas fa-shopping-cart"></i>
                             <b>&nbsp; AÑADIR AL CARRITO</b>
@@ -80,8 +73,7 @@
                         </p>
                     </div>
                     <div class="cart">
-                        <b>CANTIDAD</b><br>
-                        <input type="number" style="width: 30%;">
+                        <br>
                         <button class="add-cart button">
                             <i class="fas fa-shopping-cart"></i>
                             <b>&nbsp; AÑADIR AL CARRITO</b>
@@ -105,8 +97,7 @@
                         </p>
                     </div>
                     <div class="cart">
-                        <b>CANTIDAD</b><br>
-                        <input type="number" style="width: 30%;">
+                        <br>
                         <button class="add-cart button">
                             <i class="fas fa-shopping-cart"></i>
                             <b>&nbsp; AÑADIR AL CARRITO</b>
@@ -131,8 +122,7 @@
                         </p>
                     </div>
                     <div class="cart">
-                        <b>CANTIDAD</b><br>
-                        <input type="number" style="width: 30%;">
+                        <br>
                         <button class="add-cart button">
                             <i class="fas fa-shopping-cart"></i>
                             <b>&nbsp; AÑADIR AL CARRITO</b>
@@ -156,8 +146,7 @@
                         </p>
                     </div>
                     <div class="cart">
-                        <b>CANTIDAD</b><br>
-                        <input type="number" style="width: 30%;">
+                        <br>
                         <button class="add-cart button">
                             <i class="fas fa-shopping-cart"></i>
                             <b>&nbsp; AÑADIR AL CARRITO</b>
@@ -168,36 +157,17 @@
         </div>
 
         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-            <div class="contenido">
-                <h1>Carrito de compra</h1>
-            </div>
             <div class="contenido contenido-carrito">
                 
             </div>
             <div class="contenido carritoTotal">
-                Total:
+                
             </div>
-
-            
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Pedidos</button>
-                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
-                    <img  src="img/cart2.svg" style='margin: 0 15px;color:white; height:30px;width:30px; fill: white;'></img>
-                </button>
-            </div>
-            
         </div>
 
-        
     </div>
 
-    
-
-    
-
-
    <br><br>
-
 
     <footer>
         <a href="../inicio/index.html" style="text-decoration: none;">
