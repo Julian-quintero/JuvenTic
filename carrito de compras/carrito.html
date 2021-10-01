@@ -54,19 +54,43 @@
             </div>  
         </div> -->
 
-
-        <div class="div-total">
-            <div class="carritoTotal"></div>
-            <button class="pay btn">
-                <b>PAGAR AHORA</b>
-            </button>
-        </div>
-
     </div>
+
+    <!-- Inicio contenido del carrito de Compras -->
     <div class="contenido contenido-carrito">
         
     </div>
-    
+    <!-- Fin contenido del carrito de Compras -->
+
+    <!-- Div del total a Pagar -->
+    <div class="div-total">
+        <div class="carritoTotal">
+
+        </div>
+
+        <form action="https://formspree.io/f/xbjqbgzo" method="POST">
+            <label hidden>
+                Asunto - Subject:
+                <input type="email" name="Email">
+            </label>
+            <label hidden>
+                Asunto - Subject:
+                <input type="text" name="Subject" value="Informacion del pedido">
+            </label>
+            <label hidden>
+                Mensaje - Message:
+                <textarea name="message" id="message">
+
+                </textarea>
+            </label>
+            <button id="submit" type="submit" hidden>Enviar</button>
+        </form>
+        
+        <button class="pay btn" id="button-pay">
+            <b>PAGAR AHORA</b>
+        </button>
+    </div>
+
     <div style="display: inline-block; width: 100%; text-align: center; margin: 80px 0;">
         <a href="../contactenos/index.html" style="display: inline-block; width: 40%; text-align: right; margin-right: 10px;">
             <button class="btn btn-info">

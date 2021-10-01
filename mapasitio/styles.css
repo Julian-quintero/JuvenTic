@@ -1,8 +1,10 @@
+.navbar {
+    padding-top: 0 !important;
+}
+
 .container{
 
     margin-top: 4%;
-
-
 }
 
 div h1{

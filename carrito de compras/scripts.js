@@ -61,7 +61,7 @@ function renderCarrito(){
             </div>
             <div class="info">
                 <h4 class="title" style="display: inline-block;">${item.title}</h4> 
-                <h4 style="display: inline-block;">&nbsp - &nbsp $<span class="price">${item.price} &nbsp; </span> &nbsp; </h4>
+                <h4 style="display: inline-block;">&nbsp : &nbsp $<span class="price">${item.price} &nbsp; </span> &nbsp; </h4>
                 <div style="display: inline-block;">
                     <button class="btn-delete btn-light"> <i class="fas fa-trash" style="color: black"></i></button>
                 </div>
@@ -97,9 +97,9 @@ function carritoTotal() {
     });
 
     if(total == 0)
-        itemCartTotal.innerHTML = `<h2>Total:  $ ${total}</h2>`
+        itemCartTotal.innerHTML = `<h2 class="total">Total:  $ ${total}</h2>`
     else
-        itemCartTotal.innerHTML = `<h2>Total:  $ ${total}.000</h2>`
+        itemCartTotal.innerHTML = `<h2 class="total">Total:  $ ${total}.000</h2>`
     
     addLocalStorage();
 }
@@ -159,8 +159,8 @@ function decrement(e){
     const div = increment.closest(".itemCarrito");
     console.log(div)
     const title = div.querySelector('.title').textContent;
+    console.log(title)
     let input = div.querySelector('.input');
-    console.log("---------",input.value);
     input.value--;
     carrito.forEach(item => {
         if(item.title.trim() === title){
@@ -182,4 +182,25 @@ window.onload = function(){
 
 function addLocalStorage(){
     localStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+
+// Mensaje del Boton Pagar
+document.getElementById("button-pay").addEventListener('click',buttonPay);
+
+function buttonPay(){
+    console.log(carrito);
+    let totalPedido = document.querySelector('.carritoTotal').textContent;
+    let mensaje = document.getElementById('message');
+    let productos="";
+    let valores= document.querySelectorAll('.input');
+    for(let i=0; i<carrito.length; i++){
+        let title=carrito[i].title;
+        let precio=carrito[i].price;
+        productos=productos+title+" : $"+precio+" Cantidad: "+valores[i].value+", ";
+    }
+    // mensaje.innerHTML = `El pedido es: ${productos} ${totalPedido}`;
+    mensaje.innerHTML = `${totalPedido}`;
+    console.log(mensaje);
+    document.getElementById('submit').click();
 }
