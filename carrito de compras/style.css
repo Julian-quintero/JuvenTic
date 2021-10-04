@@ -84,6 +84,16 @@ body {
     margin: 20px 0;
     padding: 10px 5px;
 }
+
+@media (max-width: 500px) {
+    .div-total {
+        position: initial;
+        margin: auto;
+    }
+    .contenido .info {
+        width: initial;
+    }
+}
 /* Div agregado mediante funcion de JavaScript */
 .itemCarrito {
     margin-bottom: 40px;

@@ -82,7 +82,7 @@ function renderCarrito(){
         div.querySelector('.input').addEventListener('change', sumaCantidad)
         // Boton Incrementar
         div.querySelector('.btn-success').addEventListener('click',increment)
-        // Boton Disminuir
+        // Boton Disminuir 
         div.querySelector('.btn-danger').addEventListener('click',decrement)
     });
     carritoTotal();
