@@ -202,5 +202,5 @@ function buttonPay(){
     // mensaje.innerHTML = `El pedido es: ${productos} ${totalPedido}`;
     mensaje.innerHTML = `${totalPedido}`;
     console.log(mensaje);
-    document.getElementById('submit').click();
+    // document.getElementById('submit').click();
 }
