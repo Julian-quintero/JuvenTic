@@ -31,6 +31,13 @@ function addToCarritoItem(e) {
 /* Agregar */
 
 function addItemCarrito(newItem) {
+    // Alerta de Producto Añadido
+    const alert = document.querySelector('.alert');
+
+    setTimeout( function(){
+        alert.classList.add('hide')
+    }, 2000)
+        alert.classList.remove('hide')
     
     const inputElement = contenidoCarrito.getElementsByClassName('input');
 
@@ -114,6 +121,14 @@ function removeItemCarrito(e){
             carrito.splice(i,1);
         }
     }
+    // Alerta de Producto Eliminado
+    const alert = document.querySelector('.remove');
+
+    setTimeout( function(){
+        alert.classList.add('remove');
+    }, 2000)
+        alert.classList.remove('remove');
+    // Remuevo el div y llamo a la funcion carritoTotal
     div.remove();
     carritoTotal();
 }

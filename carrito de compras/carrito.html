@@ -33,6 +33,10 @@
         </div>
     </nav>
 
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+        Producto Eliminado al Carrito
+    </div>
+
     <div class="contenido">
         <h1>Carrito de compra</h1>
         
@@ -102,23 +106,23 @@
             <div class="cerrar">
                 <button id="close" class="btn btn-danger">X</button>
             </div>
-            <form action="https://formspree.io/f/xbjqbgzo" method="POST">
+            <form action="https://formspree.io/f/xbjqbgzo" method="POST" target="_blank">
                 
                 <div class="input-group mb-3">
                     <span class="input-group-text">Asunto</span>
-                    <input type="text" class="form-control" name="_subject">
+                    <input type="text" class="form-control" name="_subject" required>
                   </div>
 
                 <div class="row mb-3">
                     <label class="col-sm-2 col-form-label">Nombre</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" name="Nombre">
+                      <input type="text" class="form-control" name="Nombre" required>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3" name="Email">
+                        <input type="email" class="form-control" id="inputEmail3" name="Email" required>
                     </div>
                 </div>
 
@@ -185,7 +189,7 @@
             </div>
           </div>
         <div>
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.06562997275734!2d-74.04702714804654!3d4.678404958017497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b4253e7a719%3A0x70081f2aa809d534!2sOficinas%20de%20Google%20Colombia!5e0!3m2!1ses!2sco!4v1631472404904!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.06562997275734!2d-74.04702714804654!3d4.678404958017497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b4253e7a719%3A0x70081f2aa809d534!2sOficinas%20de%20Google%20Colombia!5e0!3m2!1ses!2sco!4v1631472404904!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </footer>
     

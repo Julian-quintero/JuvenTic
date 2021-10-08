@@ -154,3 +154,10 @@ footer iframe {
     padding: initial;
     padding-bottom: 5px;
 }
+
+.alert{
+    z-index: 100;
+}
+.hide, .remove{
+    display: none;
+}
